@@ -1,0 +1,15 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/><title>Post an Ad — BrightAd</title><link rel="stylesheet" href="style.css" /><script defer src="firebase-config.js"></script><script defer src="post.js"></script></head><body>
+<header class="nav"><div class="brand">BrightAd</div><nav><a href="index.html">Home</a><a href="about.html">How it Works</a><a href="post.html" class="active">Post Ad</a><a href="admin.html">Admin</a><a id="authLink2" href="login.html">Login</a></nav></header>
+<section class="page"><h1>Post an Advertisement</h1>
+<form id="postForm" class="form">
+  <label>Title<input id="title" type="text" required></label>
+  <label>Category<select id="category"><option>Electronics</option><option>Vehicles</option><option>Real Estate</option><option>Services</option></select></label>
+  <label>Price<input id="price" type="number" required></label>
+  <label>Description<textarea id="description" rows="5"></textarea></label>
+  <label>Upload Images<input id="images" type="file" multiple accept="image/*"></label>
+  <button class="btn" type="submit">Submit Ad</button>
+  <p id="postStatus" class="muted"></p>
+</form>
+</section>
+<footer class="footer">© BrightAd 2025</footer></body></html>

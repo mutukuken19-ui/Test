@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>BrightAd — Home</title>
+<link rel="stylesheet" href="style.css" />
+<script defer src="firebase-config.js"></script>
+<script defer src="script.js"></script>
+</head>
+<body>
+<header class="nav">
+  <div class="brand">BrightAd</div>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">How it Works</a>
+    <a href="post.html">Post Ad</a>
+    <a href="admin.html">Admin</a>
+    <a id="authLink" href="login.html">Login</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <h1>Advertise smarter — get noticed</h1>
+  <p>Reach customers with clean, modern listings.</p>
+  <form id="searchForm" class="search" onsubmit="return false;">
+    <input id="searchInput" type="text" placeholder="Search ads..." />
+    <button id="searchBtn">Search</button>
+  </form>
+</section>
+
+<section class="ads-container">
+  <h2>Latest Ads</h2>
+  <div id="adsGrid" class="ads-grid">
+    <!-- Ads will be loaded here from Firestore -->
+  </div>
+</section>
+
+<footer class="footer">© BrightAd 2025</footer>
+</body>
+</html>
